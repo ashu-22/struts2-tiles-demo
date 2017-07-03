@@ -1,0 +1,3 @@
+TilesContainer container = TilesAccess.getContainer(
+request.getSession().getServletContext());
+container.render("myapp.homepage", request, response);
