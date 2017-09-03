@@ -1,0 +1,15 @@
+Learn how to integrate Struts 2 and Tiles using the struts2 tiles plugin.
+
+The following example shows how to integrate Struts 2 and Tiles using the struts2 tiles plugin.
+In the deployment descriptor first setup the tiles definition file.
+
+1.
+<context-param>
+2.
+<param-name> org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG </param-name>
+3.
+<param-value>/WEB-INF/tiles.xml</param-value>
+
+4. 
+5.
+</context-param>
