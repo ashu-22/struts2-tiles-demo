@@ -1,0 +1,3 @@
+<listener>
+<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
+</listener>
