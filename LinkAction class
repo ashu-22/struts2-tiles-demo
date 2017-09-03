@@ -1,0 +1,39 @@
+package com.tutorials4u.action;
+02. 
+03.
+import com.opensymphony.xwork2.ActionSupport;
+04. 
+05.
+public class LinkAction extends ActionSupport {
+06. 
+07.
+private static final long serialVersionUID = -2613425890762568273L;
+08. 
+09.
+public String welcome()
+10.
+{
+11.
+return "welcome";
+12.
+}
+13. 
+14.
+public String friends()
+15.
+{
+16.
+return "friends";
+17.
+}
+18. 
+19.
+public String office()
+20.
+{
+21.
+return "office";
+22.
+}
+23.
+}
