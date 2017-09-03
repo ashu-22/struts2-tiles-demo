@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+02.
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+03.
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+04. 
+05.
+<struts>
+06.
+<package name="default" extends="struts-default">
+07.
+<result-types>
+08.
+<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+09.
+</result-types>
+10.
+<action name="*Link" method="{1}" class="com.tutorials4u.action.LinkAction">
+11.
+<result name="welcome" type="tiles">welcome</result>
+12.
+<result name="friends" type="tiles">friends</result>
+13.
+<result name="office" type="tiles">office</result>
+14.
+</action>
+15.
+</package>
+16. 
+17.
+</struts>
