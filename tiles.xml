@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+02. 
+03.
+<!DOCTYPE tiles-definitions PUBLIC
+04.
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+05.
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+06. 
+07.
+<tiles-definitions>
+08. 
+09.
+<definition name="baseLayout" template="/baseLayout.jsp">
+10.
+<put-attribute name="title"  value="Template"/>
+11.
+<put-attribute name="header" value="/header.jsp"/>
+12.
+<put-attribute name="menu"   value="/menu.jsp"/>
+13.
+<put-attribute name="body"   value="/body.jsp"/>
+14.
+<put-attribute name="footer"   value="/footer.jsp"/>
+15.
+</definition>
+16. 
+17.
+<definition name="welcome" extends="baseLayout">
+18.
+<put-attribute name="title"  value="Welcome"/>
+19.
+<put-attribute name="body"   value="/welcome.jsp"/>
+20.
+</definition>
+21. 
+22.
+<definition name="friends" extends="baseLayout">
+23.
+<put-attribute name="title"  value="Friends"/>
+24.
+<put-attribute name="body"   value="/friends.jsp"/>
+25.
+</definition>
+26. 
+27.
+<definition name="office" extends="baseLayout">
+28.
+<put-attribute name="title"  value="Office"/>
+29.
+<put-attribute name="body"   value="/office.jsp"/>
+30.
+</definition>
+31. 
+32. 
+33.
+</tiles-definitions>
