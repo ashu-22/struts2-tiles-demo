@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+02.
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+03.
+xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+04.
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+05.
+id="WebApp_ID" version="2.5">
+06.
+<display-name>Struts2Example15</display-name>
+07.
+08.
+<context-param>
+09.
+<param-name> org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG </param-name>
+10.
+<param-value>/WEB-INF/tiles.xml</param-value>
+11.
+</context-param>
+12.
+13.
+<listener>
+14.
+<listener-class>org.apache.struts2.tiles.StrutsTilesListener </listener-class>
+15.
+</listener>
+16. 
+17.
+<filter>
+18.
+<filter-name>struts2</filter-name>
+19.
+<filter-class>
+20.
+org.apache.struts2.dispatcher.ng.filter. StrutsPrepareAndExecuteFilter
+21.
+</filter-class>
+22.
+</filter>
+23. 
+24.
+<filter-mapping>
+25.
+<filter-name>struts2</filter-name>
+26.
+<url-pattern>/*</url-pattern>
+27.
+</filter-mapping>
+28. 
+29.
+<welcome-file-list>
+30.
+<welcome-file>index.jsp</welcome-file>
+31.
+</welcome-file-list>
+32.
+33.
+</web-app>
