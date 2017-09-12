@@ -1,0 +1,44 @@
+<s:textfield label="Username" name="username" />
+
+<td class="tdLabel">
+<label for="registerUser_username" class="label">Username:</label>
+</td>
+<td>
+<input type="text" name="username" value="" id="registerUser_username"/>
+</td>
+
+/************\
+1.Properties file
+global.properties
+#Global messages
+username = Username
+submit = Submit
+
+RegisterAction.properties
+#error message
+username.required = Username is required
+/********\
+
+RegisterAction.java
+package com.mkyong.user.action;
+import com.opensymphony.xwork2.ActionSupport;
+public class RegisterAction extends ActionSupport{
+private String username;
+public String getUsername() {
+return username;
+}
+public void setUsername(String username) {
+this.username = username;
+}
+//business logic
+public String execute() {
+return "SUCCESS";
+}
+//simple validation
+public void validate(){
+if("".equals(getUsername())){
+addFieldError("username", getText("username.required"));
+}
+}
+}
+
